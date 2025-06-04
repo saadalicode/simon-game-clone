@@ -8,26 +8,25 @@ let buttonColours = ["red", "blue", "green", "yellow"];
 
 function playSound(name){
     let sound = new Audio("./sounds/wrong.mp3");
-    // switch(name){
-    //     case 'blue':
-    //         sound=new Audio('./sounds/blue.mp3');
-    //         break;
-    //     case 'green':
-    //         sound=new Audio('./sounds/green.mp3');
-    //         break;
-    //     case 'red':
-    //         sound=new Audio('./sounds/red.mp3');
-    //         break;
-    //     case 'wrong':
-    //         sound=new Audio('./sounds/wrong.mp3');
-    //         break;
-    //     case 'yellow':
-    //         sound=new Audio('./sounds/yellow.mp3');
-    //         break;
-    //     default:
-    //         break;
-    // }
-    sound.play();
+    switch(name){
+        case 'blue':
+            sound=new Audio('./sounds/blue.mp3');
+            break;
+        case 'green':
+            sound=new Audio('./sounds/green.mp3');
+            break;
+        case 'red':
+            sound=new Audio('./sounds/red.mp3');
+            break;
+        case 'wrong':
+            sound=new Audio('./sounds/wrong.mp3');
+            break;
+        case 'yellow':
+            sound=new Audio('./sounds/yellow.mp3');
+            break;
+        default:
+            break;
+    }
 }
 
 function animatePress(currentColour){
